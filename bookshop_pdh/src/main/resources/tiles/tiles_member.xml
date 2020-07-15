@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!--  definition name: 공통 레이아웃의 뷰이름을 지정합니다. extends: 기본적인 레이아웃은 baseLayout을 상속받습니다. -->
+	  <definition name="/member/loginForm" extends="baseLayout">
+         <put-attribute name="title" value="로그인 페이지" />
+         <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" /> <!--  value속성값: 레이아웃 본문에 표시할 JSP를 지정합니다. -->
+      </definition>  
+      
+      <definition name="/member/memberForm" extends="baseLayout">
+         <put-attribute name="title" value="회원 가입 페이지" />
+         <put-attribute name="body" value="/WEB-INF/views/member/memberForm.jsp" />
+      </definition>
+  
+</tiles-definitions>
+
+
